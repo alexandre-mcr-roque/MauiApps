@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiDemo.MinhaPagina"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="MinhaPagina">
+    <VerticalStackLayout>
+        <Label
+            FontSize="Large"
+            HorizontalOptions="Center"
+            Text="Bem-Vindo ao .NET MAUI!"
+            VerticalOptions="Center" />
+
+        <Button
+            Clicked="Button_Clicked"
+            HorizontalOptions="Fill"
+            Text="Navegar para outra página" />
+    </VerticalStackLayout>
+</ContentPage>
