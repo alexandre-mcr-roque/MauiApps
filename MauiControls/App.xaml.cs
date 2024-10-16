@@ -1,4 +1,6 @@
-﻿namespace MauiDemo
+﻿using MauiControls.Pages;
+
+namespace MauiControls
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new AbsoluteLayoutDemo());
+            MainPage = new NavigationPage(new MauiPresentationControls());
         }
     }
 }
