@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiDemo.FlexLayoutDemo"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="FlexLayoutDemo">
+    <FlexLayout
+        AlignItems="Center"
+        Direction="Column"
+        JustifyContent="SpaceEvenly">
+        <Label
+            FontSize="Large"
+            Text="FlexLayout Example"
+            TextColor="Red" />
+
+        <Image BackgroundColor="#F9F9F9" Source="dotnet_bot.svg" />
+        <Button FontSize="Large" Text="Button without function" />
+        <Label FontSize="Large" Text="Example - 2024" />
+    </FlexLayout>
+</ContentPage>
