@@ -19,7 +19,7 @@
             <Label
                 FontSize="Large"
                 HorizontalTextAlignment="Center"
-                Text="Detalhes"
+                Text="Details"
                 VerticalTextAlignment="Center" />
         </ContentPage>
     </FlyoutPage.Detail>

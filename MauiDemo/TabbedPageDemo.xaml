@@ -10,43 +10,43 @@
     UnselectedTabColor="Aquamarine">
 
     <ContentPage
-        Title="Pág. 1"
+        Title="Page 1"
         BackgroundColor="BlanchedAlmond"
         IconImageSource="home.svg">
 
         <Label
             FontSize="Large"
             HorizontalTextAlignment="Center"
-            Text="Página 1"
+            Text="Page 1"
             VerticalTextAlignment="Center" />
     </ContentPage>
     <ContentPage
-        Title="Pág. 2"
+        Title="Page 2"
         BackgroundColor="CadetBlue"
         IconImageSource="star.svg">
 
         <Label
             FontSize="Large"
             HorizontalTextAlignment="Center"
-            Text="Página 2"
+            Text="Page 2"
             VerticalTextAlignment="Center" />
     </ContentPage>
     <ContentPage
-        Title="Pág. 3"
+        Title="Page 3"
         BackgroundColor="Yellow"
         IconImageSource="envelope.svg">
 
         <Label
             FontSize="Large"
             HorizontalTextAlignment="Center"
-            Text="Página 3"
+            Text="Page 3"
             VerticalTextAlignment="Center" />
     </ContentPage>
-    <ContentPage Title="Pág. 4" IconImageSource="bookmark.svg">
+    <ContentPage Title="Page 4" IconImageSource="bookmark.svg">
         <Label
             FontSize="Large"
             HorizontalTextAlignment="Center"
-            Text="Página 4"
+            Text="Page 4"
             VerticalTextAlignment="Center" />
     </ContentPage>
 </TabbedPage>

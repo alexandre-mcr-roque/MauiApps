@@ -15,22 +15,22 @@
             <Label
                 SemanticProperties.HeadingLevel="Level1"
                 Style="{StaticResource Headline}"
-                Text="Olá, Mundo!" />
+                Text="Hello, World!" />
 
             <Label
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
                 SemanticProperties.HeadingLevel="Level2"
                 Style="{StaticResource SubHeadline}"
-                Text="Bem-Vindo ao &#10; .NET Multi-platform App UI" />
+                Text="Welcom to &#10; .NET Multi-platform App UI" />
 
             <Button
                 x:Name="CounterBtn"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill"
                 SemanticProperties.Hint="Counts the number of times you click"
-                Text="Clique aqui" />
+                Text="Click here" />
 
-            <Button Text="Outro botão" />
+            <Button Text="Another button" />
         </VerticalStackLayout>
     </ScrollView>
 

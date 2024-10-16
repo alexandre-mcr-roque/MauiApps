@@ -70,6 +70,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="MyPage.xaml.cs">
+	    <DependentUpon>MyPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="TabbedPageDemo.xaml.cs">
 	    <DependentUpon>TabbedPageDemo.xaml</DependentUpon>
 	  </Compile>
@@ -79,7 +82,7 @@
 	  <MauiXaml Update="FlyoutPageDemo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="MinhaPagina.xaml">
+	  <MauiXaml Update="MyPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="TabbedPageDemo.xaml">

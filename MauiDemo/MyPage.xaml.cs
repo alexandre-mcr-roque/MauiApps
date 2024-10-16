@@ -1,8 +1,8 @@
 namespace MauiDemo;
 
-public partial class MinhaPagina : ContentPage
+public partial class MyPage : ContentPage
 {
-	public MinhaPagina()
+	public MyPage()
 	{
 		InitializeComponent();
 	}
