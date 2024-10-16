@@ -8,7 +8,7 @@
         <Label
             FontSize="Large"
             HorizontalOptions="Center"
-            Text="Bem-Vindo ao .NET MAUI!"
+            Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" />
 
         <Button
