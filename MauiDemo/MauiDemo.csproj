@@ -59,7 +59,9 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\bookmark.svg" />
 	  <None Remove="Resources\Images\envelope.svg" />
+	  <None Remove="Resources\Images\facebook.svg" />
 	  <None Remove="Resources\Images\home.svg" />
+	  <None Remove="Resources\Images\logo.svg" />
 	  <None Remove="Resources\Images\star.svg" />
 	</ItemGroup>
 
@@ -80,6 +82,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="FlyoutPageDemo.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="GridLayoutDemo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MyPage.xaml">
