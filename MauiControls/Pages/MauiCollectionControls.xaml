@@ -133,7 +133,7 @@
                             x:Name="seatbeltAlert"
                             OnChanged="seatbeltAlert_OnChanged"
                             Text="Seat Belt Alert" />
-                        <TextCell Text="Total: 65,900.00 $" TextColor="Black" />
+                        <TextCell Text="Total: $65,900.00" TextColor="Black" />
                         <EntryCell Placeholder="Insert your name" />
                     </TableSection>
                 </TableRoot>

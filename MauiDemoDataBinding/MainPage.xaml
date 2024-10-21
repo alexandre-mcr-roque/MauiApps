@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiDemoDataBinding.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:models="clr-namespace:MauiDemoDataBinding.Models">
+
+    <!--<ContentPage.Resources>
+        <models:Product
+            x:Key="product"
+            Name="IPhone 15"
+            Price="850.00"
+            Stock="5" />
+    </ContentPage.Resources>-->
+
+    <ContentPage.BindingContext>
+        <models:Product
+            x:Name="product"
+            Name="IPhone 15"
+            Price="850.00"
+            Stock="5" />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <!--<Label
+                x:Name="lblName"
+                FontSize="30"
+                HorizontalOptions="Center"
+                Text="Galaxy 5" />
+            <Label
+                x:Name="lblPrice"
+                FontSize="20"
+                HorizontalOptions="Center"
+                Text="10"
+                VerticalOptions="Center" />
+            <Label
+                x:Name="lblStock"
+                FontSize="20"
+                HorizontalOptions="Center"
+                Text="1"
+                VerticalOptions="Center" />
+
+            <Button
+                x:Name="CounterBtn"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill"
+                Text="Click to start the DataBinding" />-->
+
+            <!--<Label
+                x:Name="lblName"
+                FontSize="30"
+                HorizontalOptions="Center"
+                Text="{Binding Name, Source={StaticResource product}, StringFormat='Product: {0}'}" />
+            <Label
+                x:Name="lblPrice"
+                FontSize="20"
+                HorizontalOptions="Center"
+                Text="{Binding Price, Source={StaticResource product}, StringFormat='Price: {0:C2}'}"
+                VerticalOptions="Center" />
+            <Label
+                x:Name="lblStock"
+                FontSize="20"
+                HorizontalOptions="Center"
+                Text="{Binding Stock, Source={StaticResource product}, StringFormat='Stock: {0}'}"
+                VerticalOptions="Center" />-->
+
+            <Label
+                x:Name="lblName"
+                FontSize="30"
+                HorizontalOptions="Center"
+                Text="{Binding Source={x:Reference product}, Path=Name, StringFormat='Product: {0}'}" />
+            <Label
+                x:Name="lblPrice"
+                FontSize="20"
+                HorizontalOptions="Center"
+                Text="{Binding Source={x:Reference product}, Path=Price, StringFormat='Price: {0:C2}'}"
+                VerticalOptions="Center" />
+            <Label
+                x:Name="lblStock"
+                FontSize="20"
+                HorizontalOptions="Center"
+                Text="{Binding Source={x:Reference product}, Path=Stock, StringFormat='Stock: {0}'}"
+                VerticalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
