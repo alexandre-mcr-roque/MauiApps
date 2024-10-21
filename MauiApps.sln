@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiDemo", "MauiDemo\MauiDe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiControls", "MauiControls\MauiControls.csproj", "{179A8B8C-9516-4732-A5DA-E8D4C68D3D05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiDemoDataBinding", "MauiDemoDataBinding\MauiDemoDataBinding.csproj", "{33CB3C20-73BA-4DD8-A559-04CC36A9B82D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiDemoDataBinding", "MauiDemoDataBinding\MauiDemoDataBinding.csproj", "{33CB3C20-73BA-4DD8-A559-04CC36A9B82D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiHangmanGame", "MauiHangmanGame\MauiHangmanGame.csproj", "{A7FF3F67-39FA-47A8-A7F1-C789302AB43F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,12 @@ Global
 		{33CB3C20-73BA-4DD8-A559-04CC36A9B82D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33CB3C20-73BA-4DD8-A559-04CC36A9B82D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{33CB3C20-73BA-4DD8-A559-04CC36A9B82D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A7FF3F67-39FA-47A8-A7F1-C789302AB43F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7FF3F67-39FA-47A8-A7F1-C789302AB43F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7FF3F67-39FA-47A8-A7F1-C789302AB43F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A7FF3F67-39FA-47A8-A7F1-C789302AB43F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7FF3F67-39FA-47A8-A7F1-C789302AB43F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7FF3F67-39FA-47A8-A7F1-C789302AB43F}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiHangmanGame.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Grid RowDefinitions="auto,.4*" RowSpacing="20">
+        <VerticalStackLayout Spacing="5">
+            <Label
+                FontAttributes="Bold"
+                FontSize="30"
+                HorizontalOptions="Center"
+                Text="{Binding GameStatus}"
+                TextColor="Red" />
+            <Image HeightRequest="220" Source="{Binding CurrentImage}" />
+            <Label
+                FontSize="40"
+                HorizontalOptions="Center"
+                Text="{Binding Highlighted}"
+                VerticalOptions="Center" />
+            <Label
+                BackgroundColor="White"
+                FontAttributes="Bold"
+                FontSize="30"
+                HorizontalTextAlignment="Center"
+                Text="{Binding Message}" />
+            <Button
+                BackgroundColor="Black"
+                Clicked="Reset_Clicked"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalOptions="Center"
+                Text="Reset"
+                TextColor="White"
+                WidthRequest="100" />
+        </VerticalStackLayout>
+
+        <FlexLayout
+            x:Name="LetrasContainer"
+            Grid.Row="1"
+            BindableLayout.ItemsSource="{Binding Characters}"
+            JustifyContent="SpaceEvenly"
+            Wrap="Wrap">
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <Button
+                        BackgroundColor="Black"
+                        Clicked="Button_Clicked"
+                        FontAttributes="Bold"
+                        HeightRequest="50"
+                        Text="{Binding .}"
+                        WidthRequest="50" />
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </FlexLayout>
+    </Grid>
+</ContentPage>
