@@ -58,6 +58,19 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\android.svg" />
+	  <None Remove="Resources\Images\galaxies\galaxy1.jpg" />
+	  <None Remove="Resources\Images\galaxies\galaxy2.webp" />
+	  <None Remove="Resources\Images\galaxies\galaxy3.jpg" />
+	  <None Remove="Resources\Images\galaxies\galaxy4.webp" />
+	  <None Remove="Resources\Images\galaxies\galaxy5.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Include="Resources\Images\galaxies\galaxy1.jpg" />
+	  <MauiImage Include="Resources\Images\galaxies\galaxy2.webp" />
+	  <MauiImage Include="Resources\Images\galaxies\galaxy3.jpg" />
+	  <MauiImage Include="Resources\Images\galaxies\galaxy4.webp" />
+	  <MauiImage Include="Resources\Images\galaxies\galaxy5.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -67,6 +80,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Pages\MauiCollectionControls.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\MauiCommandControls.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
