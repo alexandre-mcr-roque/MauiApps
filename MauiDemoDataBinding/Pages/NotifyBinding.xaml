@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiDemoDataBinding.Pages.NotifyBinding"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="NotifyBinding">
+    <VerticalStackLayout Spacing="20">
+        <Entry FontSize="40" Text="{Binding Name, StringFormat='{0:C2}'}" />
+        <Entry FontSize="40" Text="{Binding Price, StringFormat='{0:C2}'}" />
+        <Entry FontSize="40" Text="{Binding Stock, StringFormat='{0:C2}'}" />
+
+        <Button
+            x:Name="btnUpdate"
+            Clicked="btnUpdate_Clicked"
+            FontSize="20"
+            Text="Update Product" />
+    </VerticalStackLayout>
+</ContentPage>

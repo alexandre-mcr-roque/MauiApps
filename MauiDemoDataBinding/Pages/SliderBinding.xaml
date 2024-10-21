@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiDemoDataBinding.Pages.SliderBinding"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="SliderBinding">
+    <VerticalStackLayout>
+        <Label
+            BindingContext="{x:Reference Name=slider}"
+            FontAttributes="Bold"
+            FontSize="Large"
+            HorizontalOptions="Center"
+            Rotation="{Binding Path=Value}"
+            Text="ROTATION" />
+
+        <Slider
+            x:Name="slider"
+            Maximum="360"
+            VerticalOptions="CenterAndExpand" />
+        <Label
+            BindingContext="{x:Reference slider}"
+            FontAttributes="Bold"
+            FontSize="Large"
+            HorizontalOptions="Center"
+            Text="{Binding Value, StringFormat='The angle is {0:N0} degrees'}" />
+    </VerticalStackLayout>
+</ContentPage>
