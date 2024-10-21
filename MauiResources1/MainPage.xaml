@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiResources1.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Grid RowDefinitions="*,Auto">
+        <!--<Image Aspect="Fill" Source="sneakers.jpg" />
+            <Image Source="computer.png" />
+            <Image IsAnimationPlaying="True" Source="superman.gif" />
+            <Image
+                HeightRequest="100"
+                Source="dotnet_bot.png"
+                WidthRequest="100" />
+            <Image Source="https://macoratti.net/Imagens/Carros/carro2.jpg" />
+            <Image>
+                <Image.Source>
+                    <UriImageSource CacheValidity="10:00:00:00" Uri="https://macoratti.net/Imagens/Carros/carro4.jpg" />
+                </Image.Source>
+            </Image>-->
+        <!--<Label FontSize="30" Text="Using fonts" />
+            <Label
+                FontFamily="Android"
+                FontSize="30"
+                Text="Using fonts" />
+            <Label
+                FontFamily="Pacifico"
+                FontSize="30"
+                Text="Using fonts" />
+            <Label FontSize="{OnPlatform iOS=20, Android=22, WinUI=24}" Text="Different Font properties in different platforms">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="MarkerFelt-Thin" />
+                        <On Platform="Android" Value="Android" />
+                        <On Platform="WinUI" Value="Android" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+            <Label
+                FontFamily="MyFont"
+                FontSize="30"
+                Text="Using fonts" />-->
+
+        <!--<Image>
+                <Image.Source>
+                    <FontImageSource
+                        FontFamily="IconsFont"
+                        Glyph="&#xE800;"
+                        Size="40"
+                        Color="Black" />
+                </Image.Source>
+            </Image>
+            <Image>
+                <Image.Source>
+                    <FontImageSource
+                        FontFamily="{OnPlatform Android=IconsFont}"
+                        Glyph="&#xF1E5;"
+                        Size="40"
+                        Color="Black" />
+                </Image.Source>
+            </Image>
+            <Image BackgroundColor="#D1D1D1" Source="{FontImage &#xF1EC;, FontFamily=IconsFont, Size=44}" />-->
+
+        <Image Aspect="AspectFit" Source="{Binding Photo}" />
+        <VerticalStackLayout Grid.Row="1" HorizontalOptions="Center">
+            <Label FontSize="30" Text="{Binding Name}" />
+            <Label FontSize="30" Text="{Binding Surname}" />
+            <Label FontSize="30" Text="{Binding Age}" />
+        </VerticalStackLayout>
+
+    </Grid>
+
+</ContentPage>
