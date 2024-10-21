@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiControls.Pages.MauiEditControls"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="MauiEditControls">
+    <VerticalStackLayout>
+        <!--<Entry
+            x:Name="entry1"
+            CharacterSpacing="1"
+            ClearButtonVisibility="WhileEditing"
+            Completed="entry1_Completed"
+            FontSize="Medium"
+            IsPassword="False"
+            IsReadOnly="False"
+            Keyboard="Text"
+            MaxLength="40"
+            Placeholder="view Entry"
+            PlaceholderColor="Blue"
+            ReturnType="Send"
+            TextChanged="entry1_TextChanged" />
+
+        <Editor
+            x:Name="editor1"
+            AutoSize="TextChanges"
+            CharacterSpacing="1"
+            FontSize="Large"
+            IsReadOnly="False"
+            Keyboard="Text"
+            Placeholder="view Editor"
+            PlaceholderColor="Black" />-->
+
+        <!--<VerticalStackLayout Padding="40" Spacing="40">
+            <Label FontSize="Large" Text="ActivityIndicator" />
+            <ActivityIndicator IsRunning="True" />
+            <ActivityIndicator IsRunning="True" Color="Orange" />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Padding="40" Spacing="40">
+            <Label FontSize="Large" Text="ProgressBar" />
+            <ProgressBar Progress="0.5" />
+            <ProgressBar Progress="0.8" ProgressColor="Orange" />
+        </VerticalStackLayout>-->
+
+        <!--<VerticalStackLayout>
+            <Label FontSize="Medium" Text="Project Progress" />
+            <ProgressBar
+                x:Name="progressBar"
+                Progress="0.10"
+                ProgressColor="Red" />
+
+            <Button
+                BackgroundColor="Gray"
+                Clicked="Button_Clicked"
+                FontSize="Medium"
+                Text="Progress to 90" />
+        </VerticalStackLayout>-->
+
+        <!--  We define '{Binding IsBusy} in the code-behind  -->
+        <VerticalStackLayout Padding="10">
+            <ActivityIndicator
+                x:Name="activityIndicator1"
+                HorizontalOptions="Center"
+                IsRunning="{Binding IsBusy}"
+                VerticalOptions="Center"
+                Color="Orange" />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout
+            Padding="20"
+            Spacing="2"
+            VerticalOptions="CenterAndExpand">
+            <Label
+                FontAttributes="Bold"
+                FontSize="20"
+                Text="Username"
+                TextColor="#555" />
+            <Entry
+                FontSize="20"
+                Keyboard="Text"
+                Placeholder="Enter your username"
+                PlaceholderColor="#CCC"
+                TextColor="#555" />
+
+            <Label
+                FontAttributes="Bold"
+                FontSize="20"
+                Text="PIN"
+                TextColor="#555" />
+            <Entry
+                FontSize="20"
+                IsPassword="True"
+                Keyboard="Numeric"
+                Placeholder="Enter your PIN"
+                PlaceholderColor="#CCC"
+                TextColor="#555" />
+        </VerticalStackLayout>
+        <VerticalStackLayout
+            Padding="10"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="Center">
+            <Button
+                x:Name="BtnLogin"
+                BackgroundColor="Black"
+                FontSize="Large"
+                Text="Login" />
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
